@@ -1,0 +1,8 @@
+选择Custom DNS（Enter manually）
+
+输入dns
+
+北方地区:114.215.126.16
+南方地区112.124.47.27
+
+点击start
