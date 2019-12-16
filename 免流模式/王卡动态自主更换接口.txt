@@ -1,0 +1,21 @@
+mode=wap;
+listen_port=65080;
+daemon=on;
+worker_proc=0;
+uid=3004;
+#token_api字段内容为王卡获取动态token的api地址 请自行寻找更改 默认是官方地址 不填写默认为tinyproxy服务器中继接口
+token_api="http://helper.vtop.design/KingCardServices/get_config.php?id=2";
+http_ip=123.126.122.24;
+http_port=8090;
+http_del="X-Online-Host,Host";
+http_first="[M] http://[H][U] [V]\r\nQ-GUID: [Q_G]\r\nQ-Token: [Q_T]\r\nHost: [H]\r\n";
+
+https_connect=on;
+https_ip=123.126.122.24;
+https_port=8091;
+https_del="X-Online-Host,Host";
+https_first="[M] [H] [V]\r\nHost: [H]\r\nQ-GUID: [Q_G]\r\nQ-Token: [Q_T]\r\n";
+
+dns_tcp=http; 
+dns_listen_port=65053; 
+dns_url="119.29.29.29";

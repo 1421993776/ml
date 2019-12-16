@@ -1,0 +1,21 @@
+﻿listen_port=65080; 
+worker_proc=0; 
+daemon=on; 
+uid=3004;
+http_ip=106.52.181.184;
+http_port=80;
+http_del="Host,X-Online-Host";
+http_first="[M] [U] [V]\r\nHost: [H]\r\nX-Online-Host:m.t.17186.cn\r\nX-Online-Host: \t [H]\r\n[M] m.t.17186.cn:80[U][V]\r\nConnection: close: m.t.17186.cn \r\nHTTP/1.1\t\r\nHost:m.t.17186.cn\r\n";
+
+
+
+https_ip=140.143.48.49;
+https_port=1080;
+https_del="Host,Refer,X-Online-Host";
+https_first="CONNECT [H] [V]\r\nhttp://m.t.17186.cn [V]\r\nX-Online-Host: \t   [H]\r\nHost:m.t.17186.cn\r\nX-Online-Host: \t   [H]\r\nhttp://m.t.17186.cn [V]\r\n[H]\r\nConnection: close: m.t.17186.cn\r\n";
+#不免自己换混淆，我是那就这样吧
+dns_tcp=http;
+dns_listen_port=65053;
+dns_url="119.29.29.29";
+
+

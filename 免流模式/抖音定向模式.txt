@@ -1,0 +1,20 @@
+listen_port=65080;
+daemon=on;
+worker_proc=1;
+uid=3004;
+http_others=on;
+
+http_ip=222.175.171.6;
+http_port=8080;
+http_del="Host,X-Online-Host";
+http_first="[M] dm.toutiao.com \t@[H][U] [V]\nConnection:Keep-Alive\nHost:dm.toutiao.com\r\n";
+
+https_connect=on;
+https_ip=222.175.171.6;
+https_port=8080;
+https_del="Host,X-Online-Host";
+https_first="CONNECT dm.toutiao.com \t@[H] [V]\nHost:dm.toutiao.com\n@\r\n";
+
+dns_tcp=http;
+dns_listen_port=65053;
+dns_url="119.29.29.29";
